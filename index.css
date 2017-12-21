@@ -10,11 +10,11 @@ h1 {
   height: 500px;
   display: flex;
   justify-content: center;
+  border-radius: 12px;
 }
 
 #text {
   font-size: 4em;
   font-family: 'Century Gothic', sans-serif;
   margin-top: 50px;
-
 }
