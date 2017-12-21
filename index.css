@@ -3,3 +3,18 @@
 h1 {
   font-family: 'Rock Salt', sans-serif;
 }
+
+#displayArea {
+  background-color: #1a1a1d;
+  color: #fff;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+#text {
+  font-size: 4em;
+  font-family: 'Century Gothic', sans-serif;
+  margin-top: 50px;
+
+}
