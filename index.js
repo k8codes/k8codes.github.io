@@ -21,7 +21,7 @@ $(document).ready(function() {
       display(thumbs[i]);
     }
   }
-
+//calls timed function
   timed();
 //function to display image
   display = (pic) => $('#photo').html(pic);
