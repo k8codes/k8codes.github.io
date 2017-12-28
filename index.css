@@ -1,27 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Rock+Salt');
-
+/*header*/
 h1 {
+  margin-top: 15px;
   font-family: 'Rock Salt', sans-serif;
 }
-
+/*where main photo is displayed*/
 #displayArea {
   height: 420px;
   display: flex;
   justify-content: center;
   border-radius: 12px;
 }
-
-#text {
-  font-size: 4em;
-  font-family: 'Century Gothic', sans-serif;
-  margin-top: 50px;
-}
-
+/*container for main photo*/
 #photo {
   display: flex;
   justify-content: center;
 }
-
+/*actual sizing and styling of main photo*/
 #main-photo {
   margin-top: 15px;
   height: 350px;
@@ -30,13 +25,12 @@ h1 {
   border-radius: 12px;
   box-shadow: 10px 10px 5px grey;
 }
-
-
+/*container for thumbnail photos*/
 #thumbnails {
   display: flex;
   justify-content: center;
 }
-
+/*thumbnail photos*/
 #one, #two {
   margin: 5px;
   border-radius: 12px;

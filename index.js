@@ -9,7 +9,7 @@ $(document).ready(function() {
 
   function timed() {
     let start = setInterval(() => {changeItUp()}, 3000);
-    i = 0;
+    i = 1;
   }
 
   function changeItUp() {
