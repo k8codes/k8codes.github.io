@@ -33,7 +33,8 @@ $(document).ready(function() {
 //calls timed function
   timed();
 //function to display image
-  display = (pic) => $('#photo').html(pic);
+display = (pic) => $('#photo').html(pic);
+
 //when first thumbnail is clicked
   $('#one').click(function() {
     display(img1);

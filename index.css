@@ -8,6 +8,11 @@ h1 {
 h6 {
   font-family: 'Arial', sans-serif;
 }
+
+h4, h2, p {
+  font-family: 'Arial', sans-serif;
+  margin-top: 20px;
+}
 /*where main photo is displayed*/
 #displayArea {
   height: 400px;
@@ -41,6 +46,9 @@ h6 {
   height: 100px;
   width: 100px;
   border: 1px solid #000;
+  box-shadow: 4px 4px 6px grey;
+  margin-top: 5px;
+  cursor: pointer;
 }
 
 #middle {
@@ -52,4 +60,34 @@ h6 {
   background-color: #1a1a1d;
   color: #efeee6;
   font-family: 'Arial', sans-serif;
+  box-shadow: 4px 4px 6px grey;
+  cursor: pointer;
+}
+
+.btn-group {
+  margin: 0 auto;
+}
+
+#drop {
+  background-color: #caf9f1;
+  color: #1a1a1d;
+  border: none;
+  text-decoration: none;
+}
+
+#links {
+  display: flex;
+  justify-content: center;
+}
+
+#home {
+  margin: 0 auto;
+}
+
+.fa {
+  color: #000;
+}
+
+.fa:hover {
+  color: #e2dee8;
 }
