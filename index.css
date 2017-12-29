@@ -4,9 +4,13 @@ h1 {
   margin-top: 15px;
   font-family: 'Rock Salt', sans-serif;
 }
+
+h6 {
+  font-family: 'Arial', sans-serif;
+}
 /*where main photo is displayed*/
 #displayArea {
-  height: 420px;
+  height: 400px;
   display: flex;
   justify-content: center;
   border-radius: 12px;
@@ -37,4 +41,15 @@ h1 {
   height: 100px;
   width: 100px;
   border: 1px solid #000;
+}
+
+#middle {
+  display: flex;
+  justify-content: center;
+}
+
+#resume-play {
+  background-color: #1a1a1d;
+  color: #efeee6;
+  font-family: 'Arial', sans-serif;
 }

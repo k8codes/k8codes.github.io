@@ -5,13 +5,18 @@ $(document).ready(function() {
   const img4 = '<a href="https://k8codes.github.io/calculator"><img src="calculator.jpeg" alt="calculator" id="main-photo"/></a>';
 //array of thumbnail pics
   const thumbs = [img1, img2, img3, img4];
-  let current;
+  let current, start, resumed;
 
   let i = 0;
 
   function timed() {
-    let start = setInterval(() => {changeItUp()}, 3000);
-    i = 1;
+    start = setInterval(() => {changeItUp()}, 3000);
+    if (resumed == true) {
+      i = 0;
+      resumed = false;
+    } else {
+      i = 1;
+    }
   }
 
   function changeItUp() {
@@ -23,6 +28,8 @@ $(document).ready(function() {
       display(thumbs[i]);
     }
   }
+
+  stopPlay = () => clearInterval(start);
 //calls timed function
   timed();
 //function to display image
@@ -30,9 +37,26 @@ $(document).ready(function() {
 //when first thumbnail is clicked
   $('#one').click(function() {
     display(img1);
+    stopPlay();
   })
 //when second thumbnail is clicked
   $('#two').click(function() {
     display(img2);
+    stopPlay();
+  })
+
+  $('#three').click(function() {
+    display(img3);
+    stopPlay();
+  })
+
+  $('#four').click(function() {
+    display(img4);
+    stopPlay();
+  })
+
+  $('#resume-play').click(function() {
+    resumed = true;
+    timed();
   })
 })
