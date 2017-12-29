@@ -2,8 +2,9 @@ $(document).ready(function() {
   const img1 = '<a href="https://k8codes.github.io/simonsays"><img src="simon-says.jpeg" alt="simon says game" id="main-photo"/></a>';
   const img2 = '<a href="https://k8codes.github.io/quote-generator"><img src="quote-generator.jpeg" alt="quote generator" id="main-photo"/></a>';
   const img3 = '<a href="https://k8codes.github.io/tic-tac-toe"><img src="tic-tac-toe.jpeg" alt="tic tac toe game" id="main-photo"/></a>';
+  const img4 = '<a href="https://k8codes.github.io/calculator"><img src="calculator.jpeg" alt="calculator" id="main-photo"/></a>';
 //array of thumbnail pics
-  const thumbs = [img1, img2, img3];
+  const thumbs = [img1, img2, img3, img4];
   let current;
 
   let i = 0;

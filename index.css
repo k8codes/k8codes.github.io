@@ -31,7 +31,7 @@ h1 {
   justify-content: center;
 }
 /*thumbnail photos*/
-#one, #two, #three {
+#one, #two, #three, #four{
   margin: 5px;
   border-radius: 12px;
   height: 100px;
