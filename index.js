@@ -3,8 +3,10 @@ $(document).ready(function() {
   const img2 = '<a href="https://k8codes.github.io/quote-generator"><img src="quote-generator.jpeg" alt="quote generator" id="main-photo"/></a>';
   const img3 = '<a href="https://k8codes.github.io/tic-tac-toe"><img src="tic-tac-toe.jpeg" alt="tic tac toe game" id="main-photo"/></a>';
   const img4 = '<a href="https://k8codes.github.io/calculator"><img src="calculator.jpeg" alt="calculator" id="main-photo"/></a>';
+  const img5 = '<a href="https://k8codes.github.io/pomodoro-clock"><img src="pomodoro.jpeg" alt="pomodoro clock" id="main-photo"/></a>';
+
 //array of thumbnail pics
-  const thumbs = [img1, img2, img3, img4];
+  const thumbs = [img1, img2, img3, img4, img5];
   let current, start, resumed;
 
   let i = 0;
@@ -53,6 +55,11 @@ display = (pic) => $('#photo').html(pic);
 
   $('#four').click(function() {
     display(img4);
+    stopPlay();
+  })
+
+  $('#five').click(function() {
+    display(img5);
     stopPlay();
   })
 
