@@ -38,7 +38,6 @@ h4, h2, p {
 #thumbnails {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
 }
 /*thumbnail photos*/
 #one, #two, #three, #four, #five {
