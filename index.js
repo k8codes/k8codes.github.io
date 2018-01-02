@@ -9,16 +9,17 @@ $(document).ready(function() {
   const thumbs = [img1, img2, img3, img4, img5];
   let current, start, resumed;
 
-  let i = 0;
+  let i = 1;
 
   function timed() {
-    start = setInterval(() => {changeItUp()}, 3000);
     if (resumed == true) {
-      i = 0;
-      resumed = false;
-    } else {
+      i = current + 1;
+      console.log(i);
+    } else if (resumed == false) {
       i = 1;
     }
+    start = setInterval(() => {changeItUp()}, 3000);
+
   }
 
   function changeItUp() {
@@ -31,7 +32,10 @@ $(document).ready(function() {
     }
   }
 
-  stopPlay = () => clearInterval(start);
+  function stopPlay() {
+    clearInterval(start);
+    $('#resume-play').removeClass('hide');
+  }
 //calls timed function
   timed();
 //function to display image
@@ -39,32 +43,39 @@ display = (pic) => $('#photo').html(pic);
 
 //when first thumbnail is clicked
   $('#one').click(function() {
+    current = 0;
     display(img1);
     stopPlay();
   })
 //when second thumbnail is clicked
   $('#two').click(function() {
+    current = 1;
     display(img2);
     stopPlay();
   })
 
   $('#three').click(function() {
+    current = 2;
+    console.log(current);
     display(img3);
     stopPlay();
   })
 
   $('#four').click(function() {
+    current = 3;
     display(img4);
     stopPlay();
   })
 
   $('#five').click(function() {
+    current = 4;
     display(img5);
     stopPlay();
   })
 
   $('#resume-play').click(function() {
     resumed = true;
+    $(this).addClass('hide');
     timed();
   })
 })

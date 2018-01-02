@@ -13,6 +13,11 @@ h4, h2, p {
   font-family: 'Arial', sans-serif;
   margin-top: 20px;
 }
+
+.hide {
+  visibility: hidden;
+}
+
 /*where main photo is displayed*/
 #displayArea {
   height: 400px;
@@ -20,11 +25,13 @@ h4, h2, p {
   justify-content: center;
   border-radius: 12px;
 }
+
 /*container for main photo*/
 #photo {
   display: flex;
   justify-content: center;
 }
+
 /*actual sizing and styling of main photo*/
 #main-photo {
   margin-top: 15px;
@@ -34,6 +41,7 @@ h4, h2, p {
   border-radius: 12px;
   box-shadow: 10px 10px 5px grey;
 }
+
 /*container for thumbnail photos*/
 #thumbnails {
   display: flex;
@@ -41,6 +49,7 @@ h4, h2, p {
   flex-direction: row;
   flex-wrap: wrap;
 }
+
 /*thumbnail photos*/
 #one, #two, #three, #four, #five {
   margin: 5px;
@@ -59,10 +68,8 @@ h4, h2, p {
 }
 
 #resume-play {
-  background-color: #1a1a1d;
-  color: #efeee6;
+
   font-family: 'Arial', sans-serif;
-  box-shadow: 4px 4px 6px grey;
   cursor: pointer;
 }
 
