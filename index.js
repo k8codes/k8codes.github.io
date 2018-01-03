@@ -5,9 +5,10 @@ $(document).ready(function() {
   const img4 = '<a href="https://k8codes.github.io/calculator"><img src="calculator.jpeg" alt="calculator" id="main-photo"/></a>';
   const img5 = '<a href="https://k8codes.github.io/pomodoro-clock"><img src="pomodoro.jpeg" alt="pomodoro clock" id="main-photo"/></a>';
   const img6 = '<a href="https://k8codes.github.io/weather-app"><img src="weather-app.jpg" alt="weather-app" id="main-photo"/></a>';
+  const img7 = '<a href="https://k8codes.github.io/twitch-streamers"><img src="twitch.jpeg" alt="twitch-streamers-app" id="main-photo"/></a>';
 
 //array of thumbnail pics
-  const thumbs = [img1, img2, img3, img4, img5, img6];
+  const thumbs = [img1, img2, img3, img4, img5, img6, img7];
   let current, start, resumed;
 
   let i = 1;
@@ -77,6 +78,12 @@ display = (pic) => $('#photo').html(pic);
   $('#six').click(function() {
     current = 5;
     display(img6);
+    stopPlay();
+  })
+
+  $('#seven').click(function() {
+    current = 6;
+    display(img7);
     stopPlay();
   })
 
