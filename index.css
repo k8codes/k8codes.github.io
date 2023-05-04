@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=VT323&display=swap');
+
+/*
+#3a1c56 - deep purple 
+#f52e50 - deep, reddish pink
+*/
+
+#header-container {
+	max-width: 75%;
+	height: auto;
+}
+
+#subheader {
+	color: #f57c19;
+	text-shadow: 5px 5px #e6e6e6;
+}
+.content-heading {
+	background-color: #47FD23;
+	font-family: 'VT323', monospace;
+}
+
+.content-button {
+    background-image: linear-gradient(to right, #ff617d, #f57c19);
+}
+
+.content {
+    background-color: #472c4c;
+    min-height: 300px;
+}
+
+#gcrba-list {
+	list-style-type: disc;
+}
+
+.navbar > div > a {
+	color: #472c4c;
+}
+
+#footer {
+	font-size: .8em;
+	margin-top: 150px;
+}
+
+@media only screen and (min-width: 600px) {
+	#header-container {
+		max-width: 50%;
+		height: auto;
+	}
+}
